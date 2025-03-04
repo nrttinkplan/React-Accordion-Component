@@ -1,0 +1,75 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+
+
+.wrapper {
+  width: 600px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.accordion .item {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.accordion .item:last-child {
+  border-bottom: none;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  cursor: pointer;
+  background-color: #EFB6C8;
+  transition: background-color 0.3s ease;
+}
+
+.title:hover {
+  background-color: #8174A0;
+}
+
+.title h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.title span {
+  font-size: 24px;
+  color: #333;
+}
+
+.content {
+  padding: 15px 20px;
+  background-color: #FFD2A0;
+  border-top: 1px solid #e0e0e0;
+  color: #8174A0;
+  font-size: 16px;
+}
+
+.item .content {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
